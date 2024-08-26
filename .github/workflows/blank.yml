@@ -16,7 +16,6 @@ on:
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
  reusable-workflow:
-    uses: saheelraut/Github-Actions-Workshop/.github/workflows/action.yml@main
-    with:
-      name: abc
+   runs-on: ubuntu-latest
+   uses: saheelraut/Github-Actions-Workshop/.github/workflows/action.yml@main
     
