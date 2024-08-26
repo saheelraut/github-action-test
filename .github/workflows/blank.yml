@@ -17,5 +17,7 @@ on:
 jobs:
  reusable-workflow:
    runs-on: ubuntu-latest
-   uses: saheelraut/Github-Actions-Workshop/.github/workflows/action.yml@main
+   steps:
+     - name: Reusable
+       uses: saheelraut/Github-Actions-Workshop/.github/workflows/action.yml@main
     
