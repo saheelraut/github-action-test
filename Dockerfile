@@ -14,17 +14,5 @@ RUN apt-get update && apt-get install -y \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 
-# Set up a working directory
-WORKDIR /app
-
-# Copy the requirements file
-COPY requirements.txt .
-
-# Install Python dependencies
-RUN pip install --no-cache-dir -r requirements.txt
-
-# Copy the rest of the application code
-COPY . .
-
 # Set the default command to run your application (modify as necessary)
 CMD ["python", "Test.py"]
