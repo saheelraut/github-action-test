@@ -23,4 +23,4 @@ jobs:
 
     - name: Build Docker image
       run: |
-        docker build -t odbc:latest
+        docker build -t odbc .
