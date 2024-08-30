@@ -1,6 +1,7 @@
 # Start with the Python 3.9 slim base image
 FROM python:3.9-slim
-
+RUN sudo apt-get update
+RUN apt-get install -y curl
 # Install required system packages and ODBC 18
 #Debian 9-11
 RUN curl https://packages.microsoft.com/keys/microsoft.asc | sudo tee /etc/apt/trusted.gpg.d/microsoft.asc
